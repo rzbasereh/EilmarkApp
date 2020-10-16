@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <style name="Widget.BottomNavigationView" parent="Widget.Design.BottomNavigationView">
         <item name="android:fontFamily">@font/iransans</item>
+        <item name="colorPrimary">@color/light_green</item>
+        <item name="colorOnSurface">@color/light_gray</item>
     </style>
+
 </resources>
