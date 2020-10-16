@@ -11,20 +11,25 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.eilmark.R;
 
 public class CategoriesFragment extends Fragment {
 
-    private CategoriesViewModel notificationsViewModel;
+    private CategoriesViewModel categoriesViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        notificationsViewModel =
+        categoriesViewModel =
                 new ViewModelProvider(this).get(CategoriesViewModel.class);
+
         View root = inflater.inflate(R.layout.fragment_categories, container, false);
         final TextView textView = root.findViewById(R.id.text_categories);
-        notificationsViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+        final RecyclerView recyclerView = root.findViewById(R.id.products_list);
+
+
+        categoriesViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);
