@@ -1,4 +1,4 @@
-package com.example.eilmark.ui.basket;
+package com.example.eilmark.ui.explore;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,16 +14,16 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.example.eilmark.R;
 
-public class BasketFragment extends Fragment {
+public class ExploreFragment extends Fragment {
 
-    private BasketViewModel notificationsViewModel;
+    private ExploreViewModel notificationsViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         notificationsViewModel =
-                new ViewModelProvider(this).get(BasketViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_basket, container, false);
-        final TextView textView = root.findViewById(R.id.text_basket);
+                new ViewModelProvider(this).get(ExploreViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_cart, container, false);
+        final TextView textView = root.findViewById(R.id.text_explore);
         notificationsViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {

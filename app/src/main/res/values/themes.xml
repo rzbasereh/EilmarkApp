@@ -12,5 +12,10 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+        <item name="android:textViewStyle">@style/ETextViewStyle</item>
+    </style>
+
+    <style name="ETextViewStyle" parent="android:Widget.TextView">
+        <item name="fontFamily">@font/iransans</item>
     </style>
 </resources>

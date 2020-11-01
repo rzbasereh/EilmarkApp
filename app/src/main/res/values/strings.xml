@@ -1,9 +1,8 @@
 <resources>
-    <string name="app_name">Eilmark</string>
-    <string name="title_home">خانه</string>
-    <string name="title_dashboard">داشبورد</string>
-    <string name="title_notifications">اعلان ها</string>
-    <string name="title_categories">دسته ها</string>
-    <string name="title_basket">سبدخرید</string>
+    <string name="app_name">ایلمارک</string>
+    <string name="title_home">فروشگاه</string>
+    <string name="title_explore">جستجو</string>
+    <string name="title_wish">علاقه مندی ها</string>
+    <string name="title_cart">سبدخرید</string>
     <string name="title_profile">حساب کاربری</string>
 </resources>

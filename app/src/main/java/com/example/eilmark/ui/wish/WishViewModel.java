@@ -1,14 +1,14 @@
-package com.example.eilmark.ui.basket;
+package com.example.eilmark.ui.wish;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class BasketViewModel extends ViewModel {
+public class WishViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public BasketViewModel() {
+    public WishViewModel() {
         mText = new MutableLiveData<>();
         mText.setValue("This is notifications fragment");
     }

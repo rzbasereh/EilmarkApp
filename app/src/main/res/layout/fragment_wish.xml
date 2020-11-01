@@ -4,23 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.categories.CategoriesFragment">
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/products_list"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:scrollbars="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-
-    </androidx.recyclerview.widget.RecyclerView>
+    tools:context=".ui.wish.WishFragment">
 
     <TextView
-        android:id="@+id/text_categories"
+        android:id="@+id/text_wish"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -32,5 +19,4 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -12,16 +12,22 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/navigation_categories"
-        android:name="com.example.eilmark.ui.categories.CategoriesFragment"
-        android:label="@string/title_categories"
-        tools:layout="@layout/fragment_categories" />
+        android:id="@+id/navigation_explore"
+        android:name="com.example.eilmark.ui.explore.ExploreFragment"
+        android:label="@string/title_explore"
+        tools:layout="@layout/fragment_explore" />
 
     <fragment
         android:id="@+id/navigation_basket"
-        android:name="com.example.eilmark.ui.basket.BasketFragment"
-        android:label="@string/title_basket"
-        tools:layout="@layout/fragment_basket" />
+        android:name="com.example.eilmark.ui.cart.CartFragment"
+        android:label="@string/title_cart"
+        tools:layout="@layout/fragment_cart" />
+
+    <fragment
+        android:id="@+id/navigation_wish"
+        android:name="com.example.eilmark.ui.wish.WishFragment"
+        android:label="@string/title_wish"
+        tools:layout="@layout/fragment_wish" />
 
     <fragment
         android:id="@+id/navigation_profile"
